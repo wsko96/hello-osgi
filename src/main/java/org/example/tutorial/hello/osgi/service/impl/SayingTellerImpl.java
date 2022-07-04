@@ -36,7 +36,7 @@ public class SayingTellerImpl implements SayingTeller, BundleActivator {
             while (line != null) {
                 line = line.trim();
 
-                if (!line.isEmpty() && line.startsWith("#")) {
+                if (!line.isEmpty() && !line.startsWith("#")) {
                     sayingLines.add(line);
                 }
 
