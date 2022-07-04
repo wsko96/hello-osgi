@@ -45,11 +45,14 @@
             <Bundle-Name>${pom.name}</Bundle-Name>
             <Bundle-Version>${pom.version}</Bundle-Version>
             <Bundle-Activator>
-              org.example.tutorial.hello.osgi.activator.HelloOsgiActivator
+              org.example.tutorial.hello.osgi.service.impl.SayingTellerImpl
             </Bundle-Activator>
             <Private-Package>
-              org.example.tutorial.hello.osgi.activator
+              org.example.tutorial.hello.osgi.service.impl
             </Private-Package>
+            <Export-Package>
+              org.example.tutorial.hello.osgi.service.api
+            </Export-Package>
           </instructions>
         </configuration>
       </plugin>
